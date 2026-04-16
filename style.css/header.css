@@ -1,0 +1,7 @@
+h4 {
+    font-family: var(--font-robot-mono);
+    font-size: var(--display-overline-font-size);
+    line-height: var(--display-overline-line-height);
+    text-transform: var(--display-large-text-overline-transform);
+    color: var(--content-tertiary, #3D3D3D);
+}

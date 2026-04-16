@@ -1,0 +1,19 @@
+.logo {
+    display: flex;
+    gap: 11px;
+
+    h3 {
+        font-family: var(--font-sora);
+        font-weight: var(--display-font-weight);
+        font-size: 24px;
+        text-transform: var(--display-large-text-transform);
+        line-height: var(--display-line-height);
+        color: var(--content-primary);
+        margin: 0;  
+    }
+
+    img {
+        width: 34px;
+        height: auto;
+    }
+}
