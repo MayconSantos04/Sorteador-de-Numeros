@@ -36,6 +36,66 @@
           <h4>Online - gratuito</h4>
           <h1>Sorteador de números</h1>
         </header>
+
+        <div>
+          <div class="title">
+            <h2>Quero sortear:</h2>
+            <p>
+              Defina o intervalo e a quantidade de números, clique em "Sortear"
+              e veja os resultados na tela. É rápido e fácil!
+            </p>
+
+            <div class="input-groups">
+
+              <div class="input-group">
+                <label for="num">Números</label>
+                <input class="input-select" id="num" type="number" name="num" value="2" />
+              </div>
+
+              <div class="input-group">
+                <label for="min">De</label>
+                <input class="input-select" id="min" type="number" name="min" value="3"/>
+              </div>
+
+              <div class="input-group">
+                <label for="max">Até</label>
+                <input class="input-select" id="max" type="number" name="max" value="68"/>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="button-repeat">
+            <label class="switch">
+              <input type="checkbox" id="chk">
+              <span class="slider"></span>
+            </label>
+
+            <span>Não repetir número</span>
+          </div>
+
+          <button class="button-sortear">
+            Sortear
+            <img src="/assets/icons/Frame-1.svg" alt="seta" />
+          </button>
+
+        </div>
+
+        <div class="result">
+          <h3>Resultado do sorteio</h2>
+            <div class="results-values">
+              <div class="result-value" >
+                2
+              </div>
+              <div class="result-value" >
+                4
+              </div>
+              <div class="result-value" >
+                7
+              </div>
+            </div>
+        </div>
+
       </main>
     </div>
   </body>

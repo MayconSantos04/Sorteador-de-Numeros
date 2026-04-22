@@ -1,0 +1,19 @@
+.title {
+    h2 {
+        font-family: var(--font-robot-flex);
+        font-weight: var(--display-label-medium-font-weight);
+        text-transform: var(--display-large-text-overline-transform);
+        color: var(--content-primary);
+        font-size: var(--display-label-medium-font-size);
+        line-height: var(--display-overline-line-height);
+        margin: 0;
+    }
+    
+    p {
+        font-family: var(--font-robot-flex);
+        font-size: var(--display-paragraph-medium-font-size);
+        color: var(--content-tertiary);
+        margin: 0;
+        line-height: var(--display-overline-line-height);
+    }
+}

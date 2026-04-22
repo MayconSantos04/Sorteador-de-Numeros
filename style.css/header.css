@@ -1,7 +1,29 @@
-h4 {
-    font-family: var(--font-robot-mono);
-    font-size: var(--display-overline-font-size);
-    line-height: var(--display-overline-line-height);
-    text-transform: var(--display-large-text-overline-transform);
-    color: var(--content-tertiary, #3D3D3D);
+header {
+    display: flex;
+    flex-direction: column;
+    row-gap: 8px;
+    margin: 44px 0 42px 0;
+
+    h4 {
+        font-family: var(--font-robot-mono);
+        font-size: var(--display-overline-font-size);
+        line-height: var(--display-overline-line-height);
+        text-transform: var(--display-large-text-overline-transform);
+        background: linear-gradient(to right, rgb(199, 201, 204), #3D3D3D);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        margin: 0;
+    }
+
+    h1 {
+        margin: 0;
+        font-family: var(--font-sora);
+        color: var(--content-primary);
+        text-transform: var(--display-large-text-transform);
+        font-size: var(--display-medium-font-size);
+        line-height: var(--display-line-height);
+        font-weight: var(--display-font-weight);
+    }
+
 }
