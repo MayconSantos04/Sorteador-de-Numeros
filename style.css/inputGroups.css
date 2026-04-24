@@ -26,7 +26,7 @@
     width: 82px;
     height: 52px;
     border-radius: 8px;
-    border: 2px solid transparent;
+    border: 3px solid transparent;
     background-color: var(--background-secondary);
     font-family: var(--font-sora);
     font-weight: var(--display-label-medium-font-weight);
@@ -35,4 +35,13 @@
     color: var(--content-primary);
     text-align: center;
     padding: 4px 8px;
+}
+
+.input-select:active {
+    border: 3px solid red;
+}
+
+.input-select:focus {
+    outline: none;
+    border: 3px solid blue
 }

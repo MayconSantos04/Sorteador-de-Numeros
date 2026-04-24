@@ -4,7 +4,7 @@
     --font-robot-flex: "Roboto Flex", sans-serif;
 
     --display-large-font-size: 72px;
-    --display-medium-font-size: 40px;
+    --display-medium-font-size: 42px;
     --display-small-font-size: 32px;
     --display-overline-font-size: 16px;
     --display-paragraph-large-font-size: 16px;
@@ -54,5 +54,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: var(--background-primary);
+    background-color: var(--background-primary);    
+}
+
+.hidden {
+    display: none;
 }
