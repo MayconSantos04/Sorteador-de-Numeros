@@ -25,15 +25,45 @@
     align-items: center;
     flex-wrap: wrap;
     margin-top: 48px;
+    gap: 5px;
 }
 
 .result-value {
     font-family: var(--font-robot-mono);
     font-size: var(--display-medium-font-size);
     font-weight: var(--display-label-medium-font-weight);
-    color: var(--content-brand);
+    color: white;
     padding: 10px;
     margin: 0;
+}
+
+.animation-result {
+    border-radius: 18px;
+    padding: 5px;
+    position: relative;
+}
+
+.animation-result::before {
+    content: "";
+    background-color: var(--content-brand);
+
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+
+    border-radius: inherit;
+
+    animation: girar 1.5s ease forwards;
+}
+
+@keyframes girar {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(180deg);
+    }
 }
 
 #sortear-again {
@@ -56,4 +86,8 @@
         height: 24px;
         width: 24px;
     }
+}
+
+#sortear-again.hidden {
+    display: none;
 }
