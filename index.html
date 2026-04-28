@@ -30,7 +30,7 @@
         <div class="logo">
           <img src="/assets/Frame.svg" alt="Logo" />
           <h3>numbers</h3>
-        </div>
+        </div>  
 
         <header>
           <h4>Online - gratuito</h4>
@@ -46,6 +46,7 @@
             </p>
 
             <div class="input-groups">
+
               <div class="input-group">
                 <label for="num">Números</label>
                 <input
@@ -53,7 +54,7 @@
                   id="num"
                   type="number"
                   name="num"
-                  value="2"
+                  value=""
                 />
               </div>
 
@@ -64,7 +65,7 @@
                   id="min"
                   type="number"
                   name="min"
-                  value="3"
+                  value=""
                 />
               </div>
 
@@ -75,7 +76,7 @@
                   id="max"
                   type="number"
                   name="max"
-                  value="68"
+                  value=""
                 />
               </div>
             </div>
@@ -96,20 +97,20 @@
           </button>
         </div>
 
-        <div class="result hidden">
+        <div class="result">
           <div class="title">
             <h2>Resultado do sorteio</h2>
             <p class="paragraph-result">1º resultado</p>
           </div>
 
           <div class="results-values">
-            <span class="animation-result">
-              <div class="result-value">24</div>
+            <span id="span" class="animation-result">
+              <div class="result-value"></div>
             </span>
           </div>
         </div>
 
-        <button id="sortear-again" class="hidden">
+        <button id="sortear-again" class="">
           Sortear novamente
           <img src="/assets/icons/Frame.svg" alt="seta" />
         </button>
@@ -138,5 +139,8 @@
         </div>
       </main>
     </div>
+
+    <script src="script.js"></script>
+
   </body>
 </html>
