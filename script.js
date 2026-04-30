@@ -9,20 +9,22 @@ buttonDraw.addEventListener("click", () => {
   const numberMin = Number(document.querySelector("#min").value);
   const numberMax = Number(document.querySelector("#max").value);
 
-  const creatResult = document.createElement("span");
-  creatResult.classList.add("animation-result");
+  resultValues.innerHTML = "";
 
-  const creatResultValue = document.createElement("div");
-  creatResultValue.classList.add("result-value");
-  creatResultValue.textContent = "";
+  for (let i = 0; i < numberTotal; i++) {
+    setTimeout(() => {
+      const creatResult = document.createElement("span");
+      creatResult.classList.add("animation-result");
 
-  const result =
-    Math.floor(Math.random() * (numberMax - numberMin + 1)) + numberMin;
-  console.log(result);
+      const creatResultValue = document.createElement("div");
+      creatResultValue.classList.add("result-value");
 
-  creatResultValue.textContent = result;
+      const result =
+        Math.floor(Math.random() * (numberMax - numberMin + 1)) + numberMin;
+      creatResultValue.textContent = result;
 
-  creatResult.append(creatResultValue);
-  resultValues.append(creatResult);
-  resultInt.append(resultValues);
+      creatResult.append(creatResultValue);
+      resultValues.append(creatResult);
+    }, i * 5000);
+  }
 });

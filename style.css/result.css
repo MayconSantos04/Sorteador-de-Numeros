@@ -35,12 +35,18 @@
     color: white;
     padding: 10px;
     margin: 0;
+
+    position: relative;
+    z-index: 2;
 }
 
 .animation-result {
     border-radius: 18px;
     padding: 5px;
+    
     position: relative;
+    z-index: 2;
+    transform: none !important;
 }
 
 .animation-result::before {
@@ -49,11 +55,28 @@
 
     position: absolute;
     inset: 0;
-    z-index: -1;
+    z-index: 1;
 
     border-radius: inherit;
 
-    animation: girar 1.5s ease forwards;
+    animation: girar 1s ease forwards;
+}
+
+@keyframes spinPop {
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+
+    60% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
 @keyframes girar {
