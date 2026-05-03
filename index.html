@@ -11,7 +11,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sorteador de Números</title>
-  <link rel="stylesheet" href="/style.css/style.css" />
+  <link rel="stylesheet" href="style.css/style.css" />
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
     rel="stylesheet" />
@@ -24,7 +24,7 @@
   <div class="container">
     <main>
       <div class="logo">
-        <img src="/assets/Frame.svg" alt="Logo" />
+        <img src="assets/Frame.svg" alt="Logo" />
         <h3>numbers</h3>
       </div>
 
@@ -33,7 +33,7 @@
         <h1>Sorteador de números</h1>
       </header>
 
-      <div class="">
+      <div id="sorteio" class="">
         <div class="title">
           <h2>Quero sortear:</h2>
           <p>
@@ -71,33 +71,35 @@
 
         <button class="button-sortear">
           Sortear
-          <img src="/assets/icons/Frame-1.svg" alt="seta" />
+          <img src="assets/icons/Frame-1.svg" alt="seta" />
         </button>
       </div>
 
-      <div class="result">
+      <div id="result-sorteio" class="result hidden">
         <div class="title">
           <h2>Resultado do sorteio</h2>
           <p class="paragraph-result">1º resultado</p>
         </div>
 
         <div class="results-values">
-          <!-- <span id="span" class="animation-result">
-            <div class="result-value">2</div>
-          </span> -->
-          <!-- Aqui é criado as divs com os número e spans -->
+
+          <!-- <div  class="result-box">
+            <div class="result-value"></div>
+            <span class="animation-result"></span>
+          </div> -->
+
         </div>
       </div>
 
-      <button id="sortear-again" class="">
+      <button id="sortear-again" class="hidden">
         Sortear novamente
-        <img src="/assets/icons/Frame.svg" alt="seta" />
+        <img src="assets/icons/Frame.svg" alt="seta" />
       </button>
 
       <div class="informations">
         <div class="titles-infor">
           <div class="titles">
-            <img src="/assets/icons/Frame-11.svg" alt="message" />
+            <img src="assets/icons/Frame-11.svg" alt="message" />
             <p>Como funciona o sorteador de números?</p>
           </div>
           <p>
@@ -107,7 +109,7 @@
         </div>
         <div class="titles-infor">
           <div class="titles">
-            <img src="/assets/icons/Frame-11.svg" alt="message" />
+            <img src="assets/icons/Frame-11.svg" alt="message" />
             <p class="title">Posso escolher o intervalo dos números?</p>
           </div>
           <p>
