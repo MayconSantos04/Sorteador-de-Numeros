@@ -1,7 +1,7 @@
 .informations {
     display: flex;
     flex-direction: column;
-    justify-content: baseline;
+    justify-content: center;
     margin: 79px 0 44px 0;
     row-gap: 36px;
 }
@@ -39,4 +39,8 @@
         text-transform: var(--display-paragraph-line-height);
         margin: 0;
     }
+}
+
+.informations-desktop {
+    display: none;
 }

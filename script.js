@@ -75,6 +75,7 @@ buttonDraw.addEventListener("click", () => {
           } while (numbersGenerated.includes(result));
 
           numbersGenerated.push(result);
+          
         } else {
           result =
             Math.floor(Math.random() * (numberMax - numberMin + 1)) + numberMin;
@@ -90,7 +91,7 @@ buttonDraw.addEventListener("click", () => {
             sortearAgain.classList.remove("hidden");
           }, 3000);
         }
-      }, i * 4000);
+      }, i * 2800);
     }
-  }, 2000);
+  }, 1000);
 });

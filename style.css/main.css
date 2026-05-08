@@ -2,5 +2,52 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: center;
+}
+
+@media (min-width: 1200px) {
+    main {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    header {
+        & h4 {
+            font-size: 16px;
+        }
+
+        & h1 {
+            font-size: var(--display-large-font-size);
+        }
+    }
+
+    .logo {
+        justify-content: start;
+        
+        position: absolute;
+        top: 76px;
+    }
+
+    .version-desktop {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .informations {
+        display: none !important;
+    }
+
+    .informations-desktop {
+        display: flex !important;
+        flex-direction: column !important;
+        row-gap: 36px;
+        width: 386px;
+    }
+
+    .title {
+        & p {
+            font-size: 16px !important;
+        }
+    }
 }
