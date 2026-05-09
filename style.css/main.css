@@ -10,6 +10,7 @@ main {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        column-gap: 108px;
     }
 
     header {

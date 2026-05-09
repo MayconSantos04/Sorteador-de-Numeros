@@ -52,7 +52,7 @@
     width: 100%;
     height: 56px;
     border-radius: 8px;
-    border: none;
+    border: 2px solid transparent;
     background-color: var(--background-tertiary);
     font-family: var(--font-robot-flex);
     font-size: var(--display-overline-font-size);
@@ -60,9 +60,40 @@
     text-transform: var(--display-large-text-overline-transform);
     color: var(--content-primary);
     gap: 8px;
+    cursor: pointer;
 
     img {
         height: 24px;
         width: 24px;
+    }
+}
+
+.button-sortear:hover {
+    background:
+        linear-gradient(var(--background-secondary)) padding-box,
+        linear-gradient(90deg,
+            #77C0AF,
+            #D1DC97,
+            #E9A9B3,
+            #D586E0,
+            #91A1FA) border-box;
+
+    background-size: 300% 300%;
+    transition: 0.3s ease;
+    
+    animation: gradientBorder 3s ease infinite;
+
+    img {
+        animation: movimentSeta 1s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes movimentSeta {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(10px);
     }
 }

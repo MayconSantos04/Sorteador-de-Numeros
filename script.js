@@ -1,5 +1,6 @@
 const buttonDraw = document.querySelector(".button-sortear");
 const resultInt = document.querySelector(".result");
+const containerResult = document.querySelector("#version-result-desktop");
 const resultValues = document.querySelector(".results-values");
 const buttonChk = document.querySelector(`input[type="checkbox"]`);
 const sectionSorteio = document.querySelector("#sorteio");
@@ -9,6 +10,7 @@ const sortearAgain = document.querySelector("#sortear-again");
 function reinicio() {
   sortearAgain.classList.add("hidden");
   resultSorteio.classList.add("hidden");
+  containerResult.classList.add("hidden");
 
   sectionSorteio.classList.remove("hidden");
   resultValues.innerHTML = "";
@@ -48,6 +50,7 @@ buttonDraw.addEventListener("click", () => {
 
   sectionSorteio.classList.add("hidden");
   resultSorteio.classList.remove("hidden");
+  containerResult.classList.remove("hidden");
 
   setTimeout(() => {
     resultValues.innerHTML = "";
