@@ -27,3 +27,7 @@ O projeto pode ser explorado localmente ou acessado diretamente pelo navegador a
 1. Clone o repositório:
    ```bash
    git clone [https://github.com/MayconSantos04/Sorteador-de-Numeros.git](https://github.com/MayconSantos04/Sorteador-de-Numeros.git)
+
+2. cd /Sorteador-de-Numeros
+
+3. code .
